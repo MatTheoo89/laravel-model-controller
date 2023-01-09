@@ -14,7 +14,7 @@
                             <div class="card-body">
                             <h3 class="card-title">{{$movie->title}}</h3>
                             <p class="card-text">Vote: {{$movie->vote}}/10</p>
-                            <a href="#" class="btn btn-primary">Details</a>
+                            <a href="{{ route('details', $movie->id) }}" class="btn btn-primary">Details</a>
                         </div>
                     </div>
                 </div>
